@@ -25,6 +25,8 @@ import Header from '../components/Header';
 import IntlProvider from '../components/IntlProvider';
 import MissedPage from '../components/MissedPage';
 import SearchParamsConfigurator from '../components/SearchParamsConfigurator';
+import HeroList from "../../pageProviders/HeroList";
+import HeroDetails from "../../pageProviders/HeroDetails";
 
 function App() {
   const dispatch = useDispatch();
@@ -75,6 +77,7 @@ function App() {
                       element={<DefaultPage />}
                       path={`${pageURLs[pages.defaultPage]}`}
                     />
+
                     <Route
                       element={<SecretPage />}
                       path={`${pageURLs[pages.secretPage]}`}
@@ -121,6 +124,8 @@ function App() {
                       )}
                       path="*"
                     />
+                    <Route path={`${pageURLs[pages.heroList]}`} element={<HeroList/>} />
+                    <Route path={`${pageURLs[pages.heroDetails]}/:id`} element={<HeroDetails/> } />
                   </Routes>
                 )}
               </IntlProvider>

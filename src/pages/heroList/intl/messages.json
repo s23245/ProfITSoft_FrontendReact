@@ -1,0 +1,11 @@
+{
+  "addHero": "Add Hero",
+  "filter": "Filter",
+  "heroDeletedSuccessfully": "Hero deleted successfully",
+  "areYouSure": "Are you sure you want to delete this hero?",
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "level": "Level",
+  "mana": "Mana"
+}
+

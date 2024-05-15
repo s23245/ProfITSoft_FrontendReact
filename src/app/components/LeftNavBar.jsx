@@ -13,6 +13,7 @@ import SwipeableDrawer from 'components/SwipeableDrawer';
 import Typography from 'components/Typography';
 import useAccessValidate from 'misc/hooks/useAccessValidate';
 import useTheme from 'misc/hooks/useTheme';
+import Globus from "../../components/icons/Globus";
 
 const getClasses = createUseStyles((theme) => ({
   menuHeaderSpace: {
@@ -27,6 +28,18 @@ const menuItems = [
     neededAuthorities: [authorities.ENABLE_SEE_SECRET_PAGE],
     titleIntlId: `page.${pages.secretPage}`,
   },
+    {
+        icon: null,
+        link: `${pagesURLs[pages.heroList]}`,
+        neededAuthorities: [authorities.ENABLE_SEE_SECRET_PAGE],
+        titleIntlId: `page.${pages.heroList}`,
+    },
+    {
+        icon: null,
+        link: `${pagesURLs[pages.heroDetails]}/1`,
+        neededAuthorities: [authorities.ENABLE_SEE_SECRET_PAGE],
+        titleIntlId: `page.${pages.heroDetails}`,
+    }
 ];
 
 function LeftNavBar() {
