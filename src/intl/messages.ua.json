@@ -4,6 +4,8 @@
   "page.default": "Головна",
   "page.login": "Логiн",
   "page.secret": "Секретна Сторiнка",
+  "page.heroList" : "Список Героїв",
+  "page.heroDetails" : "Деталi Героя",
   "signIn": "Увiйти",
   "signOut": "Вийти"
 }
